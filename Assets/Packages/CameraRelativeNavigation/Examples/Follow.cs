@@ -13,8 +13,8 @@ public class Follow : MonoBehaviour
     void Update()
     {
         float r = Mathf.Deg2Rad * angle;
-        Vector3 back = target.forward * distance * Mathf.Cos(r);
-        Vector3 up = target.up * distance * Mathf.Sin(r);
+        Vector3 back = Vector3.Cross(transform.right, Vector3.up) * distance * Mathf.Cos(r);
+        Vector3 up = Vector3.up * distance * Mathf.Sin(r);
         Vector3 position = target.position - back + up;
         transform.position = Vector3.SmoothDamp(transform.position, position, ref velocity, smooth);
         transform.LookAt(target.position);

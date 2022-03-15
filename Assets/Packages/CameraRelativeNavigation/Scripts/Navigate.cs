@@ -14,7 +14,7 @@ public class Navigate : MonoBehaviour
 
     public void RelativeMovement(Vector3 movement)
     {
-        if (movement.sqrMagnitude == 0.0f)
+        if (movement.sqrMagnitude < 1.0f)
         {
             direction = Vector3.Cross(camera.right, Vector3.up);
         }

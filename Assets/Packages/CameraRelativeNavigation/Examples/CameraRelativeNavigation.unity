@@ -316,7 +316,7 @@ MonoBehaviour:
   target: {fileID: 1180897031}
   distance: 10
   angle: 30
-  smooth: 0.2
+  smooth: 0.5
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 1180897028}
   - component: {fileID: 1180897032}
   m_Layer: 0
-  m_Name: Character
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,7 +382,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 24b5c87b5847e0e43bd01f55d93fa865, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
